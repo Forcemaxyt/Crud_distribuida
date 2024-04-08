@@ -50,3 +50,34 @@ Algunas de las características clave de las APIs RESTful incluyen su capacidad 
 Se implementará una arquitectura RESTful en el proyecto porque proporciona beneficios significativos, como una interfaz de API clara y coherente, interoperabilidad entre plataformas, facilidad de escalabilidad y mantenimiento, y soporte para el desarrollo ágil de aplicaciones web y móviles. RESTful es una opción sólida para crear servicios web modernos y flexibles que pueden adaptarse a las necesidades cambiantes del negocio y del mercado
 
 referencia: https://www.soybeto.dev/introduccion-a-restful-simplificando-la-comunicacion-entre-aplicaciones/
+
+Api
+
+Qué es una API?
+API significa Interfaz de Programación de Aplicaciones. Es un conjunto de reglas y definiciones que permiten que dos aplicaciones se comuniquen entre sí. Funciona como un intermediario, traduciendo las solicitudes de una aplicación al lenguaje que la otra puede entender.
+
+
+Existen muchas razones para elegir una API. Algunas de las más importantes son:
+
+Facilidad de uso: Las APIs simplifican el desarrollo de software al proporcionar una forma estándar de interactuar con diferentes aplicaciones. No es necesario conocer los detalles internos de cada aplicación, solo las reglas de la API.
+
+Eficiencia: Las APIs pueden mejorar la eficiencia al automatizar tareas que de otro modo se realizarían manualmente. Esto puede ahorrar tiempo y dinero.
+
+Escalabilidad: Las APIs permiten que las aplicaciones se escalen fácilmente. Si necesitas agregar más usuarios o funcionalidades, la API puede adaptarse sin necesidad de reescribir el código de la aplicación.
+
+Flexibilidad: Las APIs te dan la flexibilidad de conectar diferentes aplicaciones y servicios. Esto te permite crear soluciones más robustas y personalizadas.
+
+Verbos
+
+En programación, los verbos son acciones o métodos que realizan operaciones sobre objetos o datos. Estos verbos representan las acciones que se pueden llevar a cabo en un programa. Por ejemplo, en un proyecto de gestión de usuarios, algunos verbos podrían ser "crearUsuario", "eliminarUsuario", "actualizarUsuario" y "obtenerUsuario".
+
+La implementación de verbos en un proyecto de programación es esencial por varias razones:
+
+Organización y estructura: Los verbos permiten organizar el código de manera lógica y estructurada. Al dividir las acciones en verbos específicos, el código se vuelve más comprensible y mantenible.
+
+Reusabilidad: Al encapsular las acciones en verbos, se promueve la reutilización del código. Esto significa que si necesitas realizar una acción similar en diferentes partes del proyecto, puedes simplemente llamar al mismo verbo en lugar de volver a escribir el código desde cero.
+
+Claridad y legibilidad: Al utilizar verbos descriptivos, el código se vuelve más legible y comprensible tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto en el futuro. Esto facilita la colaboración y el mantenimiento del código a largo plazo.
+
+Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
+
