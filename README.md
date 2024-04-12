@@ -81,7 +81,7 @@ Claridad y legibilidad: Al utilizar verbos descriptivos, el código se vuelve m�
 
 <H1>MARCO METODOLOGICO</H1>
 
-1 Planificación y Diseño
+1 Planificación y Diseño 
 1.1 Definición de Requisitos
 Reunión del equipo para discutir y definir los requisitos del sistema, incluyendo las operaciones CRUD necesarias y los datos a ser manipulados.
 1.2 Diseño de la Base de Datos
