@@ -14,7 +14,21 @@ app = Flask(__name__)
 def Pt_principal():
     usuarios = db['usuarios']
     usuario_recibido = usuarios.find()
-    return render_template('index.html', usuarios = usuario_recibido)
+
+    # Verificar si la solicitud acepta HTML
+    if 'text/html' in request.headers.get('Accept', ''):
+        return render_template('index.html', usuarios=usuario_recibido)
+    else:
+        usuarios_json = []
+        for usuario in usuario_recibido:
+            usuarios_json.append({
+                'Id': usuario['Id'],
+                'Nombre': usuario['Nombre'],
+                'Correo': usuario['Correo']
+            })
+        return jsonify(usuarios_json)
+
+
 
 #Verbo Post
 @app.route('/usuarios_agg', methods=['POST'])
@@ -37,7 +51,7 @@ def aggusuario():
         return notFound()
 
 #Verbo delete
-@app.route('/delete/<string:usuario_identifi>')
+@app.route('/delete/<string:usuario_identifi>', methods=['DELETE'])
 def delete(usuario_identifi):
     usuarios = db['usuarios']
     usuarios.delete_one({'Id' : usuario_identifi})
