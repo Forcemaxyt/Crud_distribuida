@@ -50,12 +50,15 @@ def aggusuario():
     else:
         return notFound()
 
-#Verbo delete
+# Verbo delete
 @app.route('/delete/<string:usuario_identifi>', methods=['DELETE'])
 def delete(usuario_identifi):
     usuarios = db['usuarios']
-    usuarios.delete_one({'Id' : usuario_identifi})
-    return redirect(url_for('Pt_principal'))
+    result = usuarios.delete_one({'Id' : usuario_identifi})
+    if result.deleted_count == 1:
+        return '', 200  # Devuelve una respuesta vacía con un código de estado 200
+    else:
+        return '', 404  # Si no se encuentra el usuario, devuelve un código de estado 404
 
 #Verbo Put o post
 @app.route('/edit/<string:usuario_identifi>', methods=['POST'])
@@ -81,6 +84,10 @@ def notFound(error=None):
     response = jsonify(message)
     response.status_code = 404
     return response
+
+#Inicio de la aplicacion Flask
+if __name__ == '__main__':
+    app.run(debug=True, port=777)
 
 #Inicio de la aplicacion Flask
 if __name__ == '__main__':

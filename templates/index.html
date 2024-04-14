@@ -56,8 +56,7 @@
                                                 <small>CORREO</small>
                                                 <input type="text" class="form-control" value="{{usuario.Correo}}" name="Correo">
                                                 <button class="btn btn-primary btn-sm mt-3" type="submit">Editar</button>
-                                                <a href="{{url_for('delete', usuario_identifi=usuario.Id)}}" class="btn btn-danger btn-sm mt-3">Eliminar</a>
-
+                                                <button class="btn btn-danger btn-sm mt-3" onclick="eliminarUsuario('{{usuario.Id}}')">Eliminar</button>
                                             </form>
                                         </li>
                                     </div>
@@ -71,5 +70,29 @@
         </div>
     </div>
     
+    <script>
+        function eliminarUsuario(id) {
+            if (confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
+                fetch('/delete/' + id, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Usuario eliminado exitosamente');
+                        window.location.reload(); // Recargar la página después de eliminar el usuario
+                    } else {
+                        throw new Error('Error al eliminar usuario');
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('Error al eliminar usuario');
+                });
+            }
+        }
+    </script>
 </body>
 </html>
