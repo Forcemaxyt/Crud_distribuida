@@ -79,6 +79,26 @@ Reusabilidad: Al encapsular las acciones en verbos, se promueve la reutilizació
 
 Claridad y legibilidad: Al utilizar verbos descriptivos, el código se vuelve más legible y comprensible tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto en el futuro. Esto facilita la colaboración y el mantenimiento del código a largo plazo.
 
+JavaScript
+
+JavaScript es un lenguaje de programación versátil usado principalmente para crear elementos dinámicos e interactivos en páginas web. Se ejecuta directamente en los navegadores, permitiendo la manipulación en tiempo real del contenido que ven los usuarios.
+
+Cómo encaja JavaScript:
+
+En este proyecto, JavaScript no se utilizaría para las operaciones CRUD en sí mismas. Sin embargo, sería crucial para construir la interfaz de usuario (UI) que interactúa con la API RESTful.
+
+Imagina una aplicación web donde los usuarios pueden agregar, ver, editar y eliminar datos. JavaScript haría lo siguiente:
+
+Obtener datos (Fetch Data): Utilizar librerías como fetch o Axios para realizar solicitudes HTTP a tus endpoints de la API Flask para las operaciones CRUD (p. ej., obtener datos para mostrarlos con GET, enviar datos para crearlos con POST, etc.).
+Procesar y mostrar datos: Recibir las respuestas JSON de la API, interpretar los datos, y actualizar dinámicamente la página web con la información recuperada o manipulada (p. ej., rellenar formularios, actualizar tablas, mostrar mensajes).
+Enviar datos: Capturar la información ingresada por el usuario (p. ej., de formularios), convertirla a un formato adecuado (a menudo JSON), y enviarla a la API usando solicitudes HTTP (p. ej., POST para crear, PUT para actualizar).
+Interacción con el usuario: Manejar acciones del usuario como clics en botones, envío de formularios, etc., iniciando la ejecución de código JavaScript para interactuar con la API y actualizar la interfaz de usuario (UI).
+Ventajas de JavaScript:
+
+UI dinámica: Crea una experiencia de usuario más atractiva y responsiva en comparación con páginas HTML estáticas.
+Interacciones ricas: Habilita funciones como validación, animaciones y actualizaciones en tiempo real sin la necesidad de recargar la página completa.
+Comunicación AJAX: Permite el intercambio asincrónico de datos con el servidor (API Flask) sin interrumpir la experiencia del usuario.
+
 <H1>MARCO METODOLOGICO</H1>
 
 1 Planificación y Diseño 
