@@ -28,9 +28,7 @@ def Pt_principal():
             })
         return jsonify(usuarios_json)
 
-
-
-#Verbo Post
+# Verbo Post
 @app.route('/usuarios_agg', methods=['POST'])
 def aggusuario():
     usuarios = db['usuarios'] #crea la base de datos si no esta creada
@@ -60,8 +58,8 @@ def delete(usuario_identifi):
     else:
         return '', 404  # Si no se encuentra el usuario, devuelve un código de estado 404
 
-#Verbo Put o post
-@app.route('/edit/<string:usuario_identifi>', methods=['POST'])
+# Verbo Put o Post
+@app.route('/edit/<string:usuario_identifi>', methods=['POST','PUT'])
 def edit(usuario_identifi):
     usuarios = db['usuarios']
     Id = request.form['Id']
@@ -70,7 +68,6 @@ def edit(usuario_identifi):
 
     if Id and Nombre and Correo:
         usuarios.update_one({'Id' : usuario_identifi}, {'$set' : {'Id' : Id,'Nombre' : Nombre, 'Correo' : Correo}})
-        response = jsonify({'message' : 'Usuario ' + usuario_identifi + ' actualizado correctamente'})
         return redirect(url_for('Pt_principal'))
     else:
         return notFound()
@@ -84,10 +81,6 @@ def notFound(error=None):
     response = jsonify(message)
     response.status_code = 404
     return response
-
-#Inicio de la aplicacion Flask
-if __name__ == '__main__':
-    app.run(debug=True, port=777)
 
 #Inicio de la aplicacion Flask
 if __name__ == '__main__':
