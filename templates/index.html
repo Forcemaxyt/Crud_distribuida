@@ -12,7 +12,7 @@
 
     <div class="container">
         <h1 class="text-center mt-5 mb-5">CRUD</h1>
-        <h2 class="text-center mt-5 mb-5"> API-RESTful PYTHON - FLASK - MONGODB</h2>
+        <h2 class="text-center mt-5 mb-5">API-RESTful PYTHON - FLASK - MONGODB</h2>
     </div>
 
     <div class="container">
@@ -55,7 +55,7 @@
                                                 <input type="text" class="form-control" value="{{usuario.Nombre}}" name="Nombre">
                                                 <small>CORREO</small>
                                                 <input type="text" class="form-control" value="{{usuario.Correo}}" name="Correo">
-                                                <button class="btn btn-primary btn-sm mt-3" type="submit">Editar</button>
+                                                <button class="btn btn-primary btn-sm mt-3" type="button" onclick="confirmarEdicion('{{usuario.Id}}')">Editar</button>
                                                 <button class="btn btn-danger btn-sm mt-3" onclick="eliminarUsuario('{{usuario.Id}}')">Eliminar</button>
                                             </form>
                                         </li>
@@ -64,13 +64,19 @@
                                 {% endfor %}
                             </div>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
     <script>
+        function confirmarEdicion(id) {
+            if (confirm('¿Estás seguro de que deseas guardar los cambios?')) {
+                document.querySelector('form[action="/edit/' + id + '"]').submit();
+            }
+        }
+
         function eliminarUsuario(id) {
             if (confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
                 fetch('/delete/' + id, {
