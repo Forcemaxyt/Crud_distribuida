@@ -49,15 +49,15 @@ def aggusuario():
         return notFound()
 
 # Verbo delete
-@app.route('/delete/<string:usuario_identifi>', methods=['DELETE'])
+@app.route('/delete/<string:usuario_identifi>', methods=['POST','DELETE'])
 def delete(usuario_identifi):
     usuarios = db['usuarios']
     result = usuarios.delete_one({'Id' : usuario_identifi})
     if result.deleted_count == 1:
-        return '', 200  # Devuelve una respuesta vacía con un código de estado 200
+        return redirect(url_for('Pt_principal'))  # Redirige al usuario a la página principal después de eliminar
     else:
         return '', 404  # Si no se encuentra el usuario, devuelve un código de estado 404
-
+    
 # Verbo Put o Post
 @app.route('/edit/<string:usuario_identifi>', methods=['POST','PUT'])
 def edit(usuario_identifi):
