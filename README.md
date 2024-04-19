@@ -105,7 +105,7 @@ Comunicación AJAX: Permite el intercambio asincrónico de datos con el servidor
 
 1.1 Definición de Requisitos
 Reunión del equipo para discutir y definir los requisitos del sistema, incluyendo las operaciones CRUD necesarias y los datos a ser manipulados.
-
+[![horario](horario "horario")](https://drive.google.com/file/d/11FMt6hbYnsT528loL0Dn9rdpBDv48JAO/view?usp=sharing "horario")
 1.2 Diseño de la Base de Datos
 División de tareas para diseñar el esquema de la base de datos MongoDB, considerando la estructura de documentos necesaria para el almacenamiento eficiente de los datos.
 
