@@ -102,17 +102,24 @@ Comunicación AJAX: Permite el intercambio asincrónico de datos con el servidor
 <H1>MARCO METODOLOGICO</H1>
 
 1 Planificación y Diseño 
+
 1.1 Definición de Requisitos
 Reunión del equipo para discutir y definir los requisitos del sistema, incluyendo las operaciones CRUD necesarias y los datos a ser manipulados.
+
 1.2 Diseño de la Base de Datos
 División de tareas para diseñar el esquema de la base de datos MongoDB, considerando la estructura de documentos necesaria para el almacenamiento eficiente de los datos.
+
 2. Desarrollo
+
 2.1 Configuración del Entorno
 Instalación y configuración de Python, Flask y MongoDB en los entornos de desarrollo de cada miembro del equipo.
+
 2.2 Desarrollo de la API RESTful
 Asignación de tareas para desarrollar las rutas y controladores de la API RESTful utilizando Flask, definiendo las operaciones CRUD para interactuar con la base de datos MongoDB.
+
 2.3 Implementación de la Lógica del Negocio
 Desarrollo de la lógica del negocio para cada operación CRUD, asegurando la validación de datos y la integridad de la base de datos.
+
 2.4 Configuración de Replicación en MongoDB
 Configuración de la replicación en MongoDB para garantizar la disponibilidad y la redundancia de los datos, dividiendo las tareas para establecer un clúster replicado.
 3. Pruebas
