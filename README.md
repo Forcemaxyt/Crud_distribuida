@@ -163,20 +163,27 @@ paso 12 Se copia la uri donde dice connection string , con este accederemos a la
 [![](connect string)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
 
 paso 13 Crearemos un usuario para la gestión de las bases de datos para ser mas eficientes a la hora de editar la uri, nos vamos a Database Access,luego se selecciona add new database user
+
 [![](usuarios)](https://drive.google.com/file/d/1dkS2aop5FUnbNWLqVipT6VH4FL6IBoun/view?usp=drive_link)
 
 paso 14 Seleccionamos password como método de identificación creamos un usuario con su respectiva contraseña y le añadimos el rol de atlas admin para luego guardarlo.
-[![](dos)](https://drive.google.com/file/d/1lfqbaPd5pc66r-gnXQnATHz-ucyzubXp/view?usp=drive_link)
 
-paso 15 guardamos
-[![](uno)](https://drive.google.com/file/d/11WPyzMnjIZ37uOQZN4-Xr3xRmCRflvoy/view?usp=drive_link)
+[![](dos)](https://drive.google.com/file/d/1lfqbaPd5pc66r-gnXQnATHz-ucyzubXp/view?usp=drive_link)
 
 2.2 Desarrollo de la API RESTful
 Asignación de tareas para desarrollar las rutas y controladores de la API RESTful utilizando Flask, definiendo las operaciones CRUD para interactuar con la base de datos MongoDB.
 
 
-2.4 Configuración de Replicación en MongoDB
+2.3 Configuración de Replicación en MongoDB
 Configuración de la replicación en MongoDB para garantizar la disponibilidad y la redundancia de los datos, dividiendo las tareas para establecer un clúster replicado.
+<h3>probar replicación</h3>
+Mongodb Atlas configura automáticamente un sistema de replicación con tres bases de datos: una principal y dos secundarias. Si la base de datos principal falla, una de las secundarias asumirá su función, garantizando la continuidad del servicio.
+Para comprobar si la replicación está activa, necesitas conectarte a la base de datos remota utilizando el shell de mongo.
+ MongoDB Shell
+Se descarga el msi proporcionado por MongoDB
+
+[![](uno)](https://drive.google.com/file/d/11WPyzMnjIZ37uOQZN4-Xr3xRmCRflvoy/view?usp=drive_link)
+
 3. Pruebas
 
 3.1 Pruebas de Integración
