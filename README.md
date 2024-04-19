@@ -117,26 +117,23 @@ Instalación y configuración de Python, Flask y MongoDB en los entornos de desa
 2.2 Desarrollo de la API RESTful
 Asignación de tareas para desarrollar las rutas y controladores de la API RESTful utilizando Flask, definiendo las operaciones CRUD para interactuar con la base de datos MongoDB.
 
-2.3 Implementación de la Lógica del Negocio
-Desarrollo de la lógica del negocio para cada operación CRUD, asegurando la validación de datos y la integridad de la base de datos.
 
 2.4 Configuración de Replicación en MongoDB
 Configuración de la replicación en MongoDB para garantizar la disponibilidad y la redundancia de los datos, dividiendo las tareas para establecer un clúster replicado.
 3. Pruebas
-3.1 Pruebas Unitarias
-Desarrollo de pruebas unitarias para cada componente del sistema, asignando tareas para garantizar la cobertura de código adecuada.
-3.2 Pruebas de Integración
+
+3.1 Pruebas de Integración
 Realización de pruebas de integración para verificar el funcionamiento conjunto de los diferentes módulos del sistema.
-3.3 Pruebas de API con Postman
-Configuración de entornos de prueba en Postman y desarrollo de casos de prueba para cada ruta de la API, verificando la funcionalidad correcta de las operaciones CRUD.
+
 4. Implementación
+
 4.1 Implementación en Entornos de Producción
 Despliegue del sistema en entornos de producción, dividiendo las tareas para configurar adecuadamente los servidores y servicios necesarios.
+
 5. Documentación y Mantenimiento
+
 5.1 Documentación del Sistema
 Elaboración de documentación detallada del sistema, incluyendo guías de instalación, uso y mantenimiento.
-5.2 Mantenimiento Continuo
-Asignación de responsabilidades para el mantenimiento continuo del sistema, incluyendo la corrección de errores y la implementación de nuevas características según sea necesario.
 
 Paso 1: Configuración del entorno
 Instalación de Flask y PyMongo: Primero, asegúrate de tener instalado Flask y PyMongo en tu entorno virtual de Python.
