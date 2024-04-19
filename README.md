@@ -175,27 +175,26 @@ Asignación de tareas para desarrollar las rutas y controladores de la API RESTf
 
 #Se importan los modulos
 
-from flask import Flask, render_template, request, Response, jsonify, redirect, url_for
-import database as dbase  
-from usuario import Usuario  #Importacion de la clase Usuario
+    from flask import Flask, render_template, request, Response, jsonify, redirect, url_for
+    import database as dbase  
+    from usuario import Usuario  #Importacion de la clase Usuario
 
 #Conexion a la base de datos
 
-db = dbase.dbConexion()
+    db = dbase.dbConexion()
 
 #Creación de una instancia Flask
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
 #Rutas de la aplicación
 
-@app.route('/')
-def Pt_principal():
+    @app.route('/')
+    def Pt_principal():
     usuarios = db['usuarios']
     usuario_recibido = usuarios.find()
 
-    # Verificar si la solicitud acepta HTML
-    
+# Verificar si la solicitud acepta HTML
     if 'text/html' in request.headers.get('Accept', ''):
         return render_template('index.html', usuarios=usuario_recibido)
     else:
@@ -209,9 +208,8 @@ def Pt_principal():
         return jsonify(usuarios_json)
 
 # Verbo Post
-
-@app.route('/usuarios_agg', methods=['POST'])
-def aggusuario():
+    @app.route('/usuarios_agg', methods=['POST'])
+    def aggusuario():
     usuarios = db['usuarios'] #crea la base de datos si no esta creada
     Id = request.form['Id']
     Nombre = request.form['Nombre']
@@ -230,9 +228,8 @@ def aggusuario():
         return notFound()
 
 # Verbo delete
-
-@app.route('/delete/<string:usuario_identifi>', methods=['POST','DELETE'])
-def delete(usuario_identifi):
+    @app.route('/delete/<string:usuario_identifi>', methods=['POST','DELETE'])
+    def delete(usuario_identifi):
     usuarios = db['usuarios']
     result = usuarios.delete_one({'Id' : usuario_identifi})
     if result.deleted_count == 1:
@@ -241,9 +238,8 @@ def delete(usuario_identifi):
         return '', 404  # Si no se encuentra el usuario, devuelve un código de estado 404
     
 # Verbo Put o Post
-
-@app.route('/edit/<string:usuario_identifi>', methods=['POST','PUT'])
-def edit(usuario_identifi):
+    @app.route('/edit/<string:usuario_identifi>', methods=['POST','PUT'])
+    def edit(usuario_identifi):
     usuarios = db['usuarios']
     Id = request.form['Id']
     Nombre = request.form['Nombre']
@@ -255,8 +251,8 @@ def edit(usuario_identifi):
     else:
         return notFound()
 
-@app.errorhandler(404)
-def notFound(error=None):
+    @app.errorhandler(404)
+    def notFound(error=None):
     message ={
         'message': 'No encontrado ' + request.url,
         'status': '404 Not Found'
@@ -267,7 +263,7 @@ def notFound(error=None):
 
 #Inicio de la aplicacion Flask
 
-if __name__ == '__main__':
+    if __name__ == '__main__':
     app.run(debug=True, port=777)
 
 
