@@ -133,7 +133,7 @@ Luego de crearse la cuenta de mongo se creará el clúster de la siguiente maner
 
  paso 4 En la sección Nivel de Clúster, seleccione la opción de M0 para crear el clúster de nivel libre. Ofrece 512 MB de espacio de almacenamiento, una versión reciente de MongoDB con WiredTiger como el motor de almacenamiento, un conjunto de réplicas de tres nodos y un generoso 10 GB de ancho de banda por semana.
  
- [![](m0)](https://drive.google.com/file/d/1L7IklHvErk_6ZbZl5x6bhvtaAgvgowVJ/view?usp=drive_link)
+ [![](m 0)](https://drive.google.com/file/d/1L7IklHvErk_6ZbZl5x6bhvtaAgvgowVJ/view?usp=drive_link)
 
 Nota: el nombre del clúster no se podrá cambiar una vez creado
 
@@ -143,42 +143,42 @@ paso 5 El resto lo dejamos por defecto y le damos a créate Deployment
 
 paso 6 damos a choose a connection method
 
-[![](connect)](https://drive.google.com/file/d/1rkV9NATqmdlOIzJgb0fL0sSnwAUX6YnL/view?usp=drive_link)
+[![](connect y)](https://drive.google.com/file/d/1rkV9NATqmdlOIzJgb0fL0sSnwAUX6YnL/view?usp=drive_link)
 
 paso 7  damos a drivers
 
-[![](drives)](https://drive.google.com/file/d/1NYOXWT7jkxmIqkusehUnEM0sjhJvJLMl/view?usp=drive_link)
+[![](drives u)](https://drive.google.com/file/d/1NYOXWT7jkxmIqkusehUnEM0sjhJvJLMl/view?usp=drive_link)
 
 paso 8 Seleccionamos Python e instalamos el driver como nos dice el propio mongo con 
 << python -m pip install "pymongo[srv]" >> , tambien instalaremos para luego darle a a review setup steps.
 
-[![](mongo)](https://drive.google.com/file/d/19J6gFHjJPL0bXpJt8xsGiZPIQZnba-iv/view?usp=drive_link)
+[![](mongo o)](https://drive.google.com/file/d/19J6gFHjJPL0bXpJt8xsGiZPIQZnba-iv/view?usp=drive_link)
 
 paso 9 Instalación de pymongo: biblioteca de Python que se utiliza para interactuar con la base de datos MongoDB.
 << pip install pymongo >>
 
-[![](pip)](https://drive.google.com/file/d/1UQQw-4zKKSQNHwKMSf6sgvwgHNgItLDe/view?usp=drive_link)
+[![](pip p)](https://drive.google.com/file/d/1UQQw-4zKKSQNHwKMSf6sgvwgHNgItLDe/view?usp=drive_link)
 
 paso 10 Instalación de pymongo srv: Cuando se habla de pymongo srv, se está haciendo referencia a la funcionalidad de conexión a una base de datos MongoDB utilizando una cadena de conexión SRV.
 
-[![](pymongosrv)](https://drive.google.com/file/d/1qIGTqTbq6lldIEnA_NObDmTQC_Q2_0vk/view?usp=drive_link)
+[![](pymongo srv)](https://drive.google.com/file/d/1qIGTqTbq6lldIEnA_NObDmTQC_Q2_0vk/view?usp=drive_link)
 
 paso 11 Instalalcion de certifi :  biblioteca de Python que proporciona certificados de confianza para la verificación de la autenticidad de certificados SSL/TLS en aplicaciones Python. Esta biblioteca es utilizada por otras bibliotecas que realizan conexiones seguras a servidores web utilizando el protocolo HTTPS, como requests, urllib3, http.client, entre otras.
 <<pip install certifi >>
 
-[![](certifi)](https://drive.google.com/file/d/1UH1d9snLycKmf8uYjR4P22QwTQr7mr05/view?usp=drive_link)
+[![](certifi i)](https://drive.google.com/file/d/1UH1d9snLycKmf8uYjR4P22QwTQr7mr05/view?usp=drive_link)
 
 paso 12 Se copia la uri donde dice connection string , con este accederemos a la base de datos y por ultimo le damos a done.
 
-[![](connectstring)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
+[![](connect string)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
 
 paso 13 Crearemos un usuario para la gestión de las bases de datos para ser mas eficientes a la hora de editar la uri, nos vamos a Database Access,luego se selecciona add new database user
 
-[![](usuarios)](https://drive.google.com/file/d/1dkS2aop5FUnbNWLqVipT6VH4FL6IBoun/view?usp=drive_link)
+[![](usuarios s)](https://drive.google.com/file/d/1dkS2aop5FUnbNWLqVipT6VH4FL6IBoun/view?usp=drive_link)
 
 paso 14 Seleccionamos password como método de identificación creamos un usuario con su respectiva contraseña y le añadimos el rol de atlas admin para luego guardarlo.
 
-[![](dos)](https://drive.google.com/file/d/1lfqbaPd5pc66r-gnXQnATHz-ucyzubXp/view?usp=drive_link)
+[![](do s)](https://drive.google.com/file/d/1lfqbaPd5pc66r-gnXQnATHz-ucyzubXp/view?usp=drive_link)
 
 2.2 Desarrollo de la API RESTful
 Asignación de tareas para desarrollar las rutas y controladores de la API RESTful utilizando Flask, definiendo las operaciones CRUD para interactuar con la base de datos MongoDB.
@@ -285,7 +285,7 @@ Para comprobar si la replicación está activa, necesitas conectarte a la base d
  MongoDB Shell
 Se descarga el msi proporcionado por MongoDB
 
-[![](uno)](https://drive.google.com/file/d/11WPyzMnjIZ37uOQZN4-Xr3xRmCRflvoy/view?usp=drive_link)
+[![](un o)](https://drive.google.com/file/d/11WPyzMnjIZ37uOQZN4-Xr3xRmCRflvoy/view?usp=drive_link)
 
 1. Ve a la página de MongoDB donde está tu clúster de base de datos.
 2. Haz clic en "Conectar" y elige el método deseado. En este caso, usaremos el shell de mongo.
