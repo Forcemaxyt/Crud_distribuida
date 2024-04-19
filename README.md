@@ -123,18 +123,26 @@ Desarrollo de la lógica del negocio para cada operación CRUD, asegurando la va
 2.4 Configuración de Replicación en MongoDB
 Configuración de la replicación en MongoDB para garantizar la disponibilidad y la redundancia de los datos, dividiendo las tareas para establecer un clúster replicado.
 3. Pruebas
+
 3.1 Pruebas Unitarias
 Desarrollo de pruebas unitarias para cada componente del sistema, asignando tareas para garantizar la cobertura de código adecuada.
+
 3.2 Pruebas de Integración
 Realización de pruebas de integración para verificar el funcionamiento conjunto de los diferentes módulos del sistema.
+
 3.3 Pruebas de API con Postman
 Configuración de entornos de prueba en Postman y desarrollo de casos de prueba para cada ruta de la API, verificando la funcionalidad correcta de las operaciones CRUD.
+
 4. Implementación
+
 4.1 Implementación en Entornos de Producción
 Despliegue del sistema en entornos de producción, dividiendo las tareas para configurar adecuadamente los servidores y servicios necesarios.
+
 5. Documentación y Mantenimiento
+
 5.1 Documentación del Sistema
 Elaboración de documentación detallada del sistema, incluyendo guías de instalación, uso y mantenimiento.
+
 5.2 Mantenimiento Continuo
 Asignación de responsabilidades para el mantenimiento continuo del sistema, incluyendo la corrección de errores y la implementación de nuevas características según sea necesario.
 
