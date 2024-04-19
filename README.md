@@ -170,7 +170,7 @@ paso 11 Instalalcion de certifi :  biblioteca de Python que proporciona certific
 
 paso 12 Se copia la uri donde dice connection string , con este accederemos a la base de datos y por ultimo le damos a done.
 
-[![](connect string)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
+[![](connectstring)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
 
 paso 13 Crearemos un usuario para la gestión de las bases de datos para ser mas eficientes a la hora de editar la uri, nos vamos a Database Access,luego se selecciona add new database user
 
