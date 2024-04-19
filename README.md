@@ -128,38 +128,48 @@ Para poder utilizar servicios en la nube de MongoDB, necesitarás una cuenta de 
 link: https://www.mongodb.com/
 
 Luego de crearse la cuenta de mongo se creará el clúster de la siguiente manera:
+
 [![](crear clouster)](https://drive.google.com/file/d/1tcEvA3CGheLehANkgrCoxOQyJ8vPh4vn/view?usp=sharing)
 
  paso 4 En la sección Nivel de Clúster, seleccione la opción de M0 para crear el clúster de nivel libre. Ofrece 512 MB de espacio de almacenamiento, una versión reciente de MongoDB con WiredTiger como el motor de almacenamiento, un conjunto de réplicas de tres nodos y un generoso 10 GB de ancho de banda por semana.
+ 
  [![](m0)](https://drive.google.com/file/d/1L7IklHvErk_6ZbZl5x6bhvtaAgvgowVJ/view?usp=drive_link)
 
 Nota: el nombre del clúster no se podrá cambiar una vez creado
 
 paso 5 El resto lo dejamos por defecto y le damos a créate Deployment
+
 [![](m0 develpment)](https://drive.google.com/file/d/1Vneie6i_VrozCJwi7mKzHzSBxnXOhwIr/view?usp=drive_link)
 
 paso 6 damos a choose a connection method
+
 [![](connect)](https://drive.google.com/file/d/1rkV9NATqmdlOIzJgb0fL0sSnwAUX6YnL/view?usp=drive_link)
 
 paso 7  damos a drivers
+
 [![](drives)](https://drive.google.com/file/d/1NYOXWT7jkxmIqkusehUnEM0sjhJvJLMl/view?usp=drive_link)
 
 paso 8 Seleccionamos Python e instalamos el driver como nos dice el propio mongo con 
 << python -m pip install "pymongo[srv]" >> , tambien instalaremos para luego darle a a review setup steps.
+
 [![](mongo)](https://drive.google.com/file/d/19J6gFHjJPL0bXpJt8xsGiZPIQZnba-iv/view?usp=drive_link)
 
 paso 9 Instalación de pymongo: biblioteca de Python que se utiliza para interactuar con la base de datos MongoDB.
 << pip install pymongo >>
+
 [![](pip)](https://drive.google.com/file/d/1UQQw-4zKKSQNHwKMSf6sgvwgHNgItLDe/view?usp=drive_link)
 
 paso 10 Instalación de pymongo srv: Cuando se habla de pymongo srv, se está haciendo referencia a la funcionalidad de conexión a una base de datos MongoDB utilizando una cadena de conexión SRV.
+
 [![](pymongosrv)](https://drive.google.com/file/d/1qIGTqTbq6lldIEnA_NObDmTQC_Q2_0vk/view?usp=drive_link)
 
 paso 11 Instalalcion de certifi :  biblioteca de Python que proporciona certificados de confianza para la verificación de la autenticidad de certificados SSL/TLS en aplicaciones Python. Esta biblioteca es utilizada por otras bibliotecas que realizan conexiones seguras a servidores web utilizando el protocolo HTTPS, como requests, urllib3, http.client, entre otras.
 <<pip install certifi >>
+
 [![](certifi)](https://drive.google.com/file/d/1UH1d9snLycKmf8uYjR4P22QwTQr7mr05/view?usp=drive_link)
 
 paso 12 Se copia la uri donde dice connection string , con este accederemos a la base de datos y por ultimo le damos a done.
+
 [![](connect string)](https://drive.google.com/file/d/1N6gHC-6UXE8CyOkOutTU2DLtl0Bc5s2Z/view?usp=drive_link)
 
 paso 13 Crearemos un usuario para la gestión de las bases de datos para ser mas eficientes a la hora de editar la uri, nos vamos a Database Access,luego se selecciona add new database user
@@ -276,6 +286,16 @@ Para comprobar si la replicación está activa, necesitas conectarte a la base d
 Se descarga el msi proporcionado por MongoDB
 
 [![](uno)](https://drive.google.com/file/d/11WPyzMnjIZ37uOQZN4-Xr3xRmCRflvoy/view?usp=drive_link)
+
+1. Ve a la página de MongoDB donde está tu clúster de base de datos.
+2. Haz clic en "Conectar" y elige el método deseado. En este caso, usaremos el shell de mongo.
+3. Ejecuta la línea de comando proporcionada por MongoDB en una consola CMD o PowerShell, reemplazando `<username>` con tu usuario:
+   mongosh "mongodb+srv://crud.1okqllu.mongodb.net/" --apiVersion 1 --username <username>   
+4. Luego, proporciona la contraseña correspondiente a ese usuario.
+ Verificar el Estado de la Replicación
+Una vez que estás conectado en la consola de comandos, ejecuta el siguiente comando para revisar el estado de la replicación:
+rs.status()
+
 
 3. Pruebas
 
