@@ -1,6 +1,19 @@
 Implementación de un CRUD con python flask mongodb (con replicación) y restful api
 
 <H>MARCO TEORICO</H>
+Python
+
+Python es un lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad de código. Es ampliamente utilizado en diversos campos como desarrollo web, análisis de datos, inteligencia artificial y automatización de tareas.
+
+En Python, el paradigma de programación es muy flexible, permitiendo a los desarrolladores adoptar diferentes estilos como programación imperativa, orientada a objetos y funcional. Esto hace que Python sea una herramienta poderosa para abordar una variedad de problemas y adaptarse a diferentes necesidades de desarrollo.
+
+Una de las características distintivas de Python es su amplia biblioteca estándar, que ofrece módulos y funciones predefinidas para realizar diversas tareas, desde operaciones básicas de entrada y salida hasta complejas operaciones de procesamiento de datos y manipulación de archivos.
+
+Además, Python cuenta con una activa comunidad de desarrolladores que contribuyen constantemente con nuevas bibliotecas y herramientas, lo que facilita aún más el desarrollo de aplicaciones y proyectos.
+
+Se implementará Python en el proyecto debido a sus numerosos beneficios, como su simplicidad y facilidad de aprendizaje, su amplia comunidad de soporte, su versatilidad para diversos tipos de aplicaciones y su capacidad para integrarse con otras tecnologías y sistemas. Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes. El software Python se puede descargar gratis, se integra bien a todos los tipos de sistemas y aumenta la velocidad del desarrollo. Python proporciona una base sólida para el desarrollo eficiente y escalable de software, lo que lo convierte en una elección ideal para proyectos modernos de desarrollo de software.
+
+referencia: https://aws.amazon.com/es/what-is/python/
 
 MongoDB
 
@@ -23,19 +36,6 @@ Gracias a su interfaz intuitiva y fácil de usar, Postman permite enviar solicit
 
 Referencia: https://www.postman.com/
 
-Python
-
-Python es un lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad de código. Es ampliamente utilizado en diversos campos como desarrollo web, análisis de datos, inteligencia artificial y automatización de tareas.
-
-En Python, el paradigma de programación es muy flexible, permitiendo a los desarrolladores adoptar diferentes estilos como programación imperativa, orientada a objetos y funcional. Esto hace que Python sea una herramienta poderosa para abordar una variedad de problemas y adaptarse a diferentes necesidades de desarrollo.
-
-Una de las características distintivas de Python es su amplia biblioteca estándar, que ofrece módulos y funciones predefinidas para realizar diversas tareas, desde operaciones básicas de entrada y salida hasta complejas operaciones de procesamiento de datos y manipulación de archivos.
-
-Además, Python cuenta con una activa comunidad de desarrolladores que contribuyen constantemente con nuevas bibliotecas y herramientas, lo que facilita aún más el desarrollo de aplicaciones y proyectos.
-
-Se implementará Python en el proyecto debido a sus numerosos beneficios, como su simplicidad y facilidad de aprendizaje, su amplia comunidad de soporte, su versatilidad para diversos tipos de aplicaciones y su capacidad para integrarse con otras tecnologías y sistemas. Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes. El software Python se puede descargar gratis, se integra bien a todos los tipos de sistemas y aumenta la velocidad del desarrollo. Python proporciona una base sólida para el desarrollo eficiente y escalable de software, lo que lo convierte en una elección ideal para proyectos modernos de desarrollo de software.
-
-referencia: https://aws.amazon.com/es/what-is/python/
 
 Restful
 
