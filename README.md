@@ -308,13 +308,13 @@ Realización de pruebas de integración para verificar el funcionamiento conjunt
 4. Implementación
 verificamos el correcto funcionamiento del crud
  verificamos el correcto funcionamiento del crear
-[![](/examples/php/../uploads/guardar.png)](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
+[![](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
 verificamos el correcto funcionamiento del eliminar
-[![](/examples/php/../uploads/guardar.png)](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
+[![](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
 verificamos el correcto funcionamiento del editar
-[![](/examples/php/../uploads/editar.png)](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
+[![](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
 
 
 
