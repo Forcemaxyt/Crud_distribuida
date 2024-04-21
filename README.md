@@ -301,71 +301,21 @@ rs.status()
 
 3.1 Pruebas de Integración
 Realización de pruebas de integración para verificar el funcionamiento conjunto de los diferentes módulos del sistema.
-
+ escribimos en nuestro navegador: localhost:777
+ 
+ ![](https://drive.google.com/file/d/1zw3hAJi1KtcUKOpy5BunZ6-NKic1IG4e/view?usp=drive_link)
+ 
 4. Implementación
+verificamos el correcto funcionamiento del crud
+ verificamos el correcto funcionamiento del crear
+[![](/examples/php/../uploads/guardar.png)](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
+verificamos el correcto funcionamiento del eliminar
+[![](/examples/php/../uploads/guardar.png)](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
-Paso 1: Configuración del entorno
-Instalación de Flask y PyMongo: Primero, asegúrate de tener instalado Flask y PyMongo en tu entorno virtual de Python.
+verificamos el correcto funcionamiento del editar
+[![](/examples/php/../uploads/editar.png)](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
 
-bash
-Copy code
-pip install Flask pymongo
-Configuración de MongoDB con replicación: Configura tu clúster de MongoDB con replicación siguiendo la documentación oficial de MongoDB.
-
-Paso 2: Configuración de la aplicación Flask
-Inicialización de la aplicación Flask: Crea un archivo app.py y configura una aplicación Flask básica.
-
-python
-Copy code
-from flask import Flask
-from flask_pymongo import PyMongo
-
-app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/mydatabase"
-mongo = PyMongo(app)
-
-if __name__ == "__main__":
-    app.run(debug=True)
-Definición de las rutas CRUD: Define las rutas para las operaciones CRUD.
-
-python
-Copy code
-from flask import jsonify, request
-from bson.objectid import ObjectId
-
-@app.route('/users', methods=['GET'])
-def get_users():
-    users = mongo.db.users.find()
-    return jsonify({'users': users})
-
-@app.route('/user/<id>', methods=['GET'])
-def get_user(id):
-    user = mongo.db.users.find_one({'_id': ObjectId(id)})
-    return jsonify({'user': user})
-
-@app.route('/user', methods=['POST'])
-def add_user():
-    user = mongo.db.users.insert_one(request.json)
-    new_user = mongo.db.users.find_one({'_id': user.inserted_id})
-    return jsonify({'user': new_user})
-
-@app.route('/user/<id>', methods=['PUT'])
-def update_user(id):
-    mongo.db.users.update_one({'_id': ObjectId(id)}, {'$set': request.json})
-    updated_user = mongo.db.users.find_one({'_id': ObjectId(id)})
-    return jsonify({'user': updated_user})
-
-@app.route('/user/<id>', methods=['DELETE'])
-def delete_user(id):
-    mongo.db.users.delete_one({'_id': ObjectId(id)})
-    return jsonify({'result': 'User deleted successfully'})
-Paso 3: Ejecución de la aplicación
-Ejecuta tu aplicación Flask.
-
-bash
-Copy code
-python app.py
 
 
 Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
