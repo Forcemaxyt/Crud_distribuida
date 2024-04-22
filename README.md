@@ -1,4 +1,4 @@
-Implementación de un CRUD con python flask mongodb (con replicación) y restful api
+<h1>Implementación de un CRUD con python flask mongodb (con replicación) y restful api</h1>
 
 <H>MARCO TEORICO</H>
 Python
@@ -316,6 +316,13 @@ verificamos el correcto funcionamiento del eliminar
 verificamos el correcto funcionamiento del editar
 [![]](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
 
+4.1 verificacion con postman 
+
+verificación del agregar
+verificamos el editar
+[![]](https://drive.google.com/file/d/1aqomJq9yf3DrvUuhPG4r8Hkm4l9Ya3ns/view?usp=sharing)
+
+verificamos el eliminar
 
 
 Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
