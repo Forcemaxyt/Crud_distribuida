@@ -303,18 +303,18 @@ rs.status()
 Realización de pruebas de integración para verificar el funcionamiento conjunto de los diferentes módulos del sistema.
  escribimos en nuestro navegador: localhost:777
  
- ![](https://drive.google.com/file/d/1zw3hAJi1KtcUKOpy5BunZ6-NKic1IG4e/view?usp=drive_link)
+ [![]](https://drive.google.com/file/d/1zw3hAJi1KtcUKOpy5BunZ6-NKic1IG4e/view?usp=drive_link)
  
 4. Implementación
 verificamos el correcto funcionamiento del crud
  verificamos el correcto funcionamiento del crear
-[![](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
+[![]](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
 verificamos el correcto funcionamiento del eliminar
-[![](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
+[![]](https://drive.google.com/file/d/1Dg2sgQI20nL1HR0cYWL38zA8DekETMws/view?usp=sharing)
 
 verificamos el correcto funcionamiento del editar
-[![](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
+[![]](https://drive.google.com/file/d/1yHcqvOX0PQDHRY8kHxgeJVUA5Ylg6kmK/view?usp=drive_link)
 
 
 
