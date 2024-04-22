@@ -334,3 +334,10 @@ verificamos el editar
 
 Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
 
+
+¿por que no se puede utilizar potamn para cambiar la base primaria a segundaria? 
+
+Postman en sí mismo no tiene la capacidad de bloquear el acceso a una IP específica en MongoDB Atlas. 
+
+MongoDB Atlas solo permite conexiones de cliente a la implementación de la base de datos desde las entradas en la lista de acceso IP del proyecto. Cada entrada es una dirección IP única o un rango de direcciones notado por CIDR. Para bloquear el acceso a una IP específica, tendrías que eliminar esa entrada de la lista de acceso IP en la configuración de tu proyecto en MongoDB Atlas.
+
