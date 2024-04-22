@@ -1,7 +1,7 @@
 <h1>Implementación de un CRUD con python flask mongodb (con replicación) y restful api</h1>
 
 <H>MARCO TEORICO</H>
-Python
+<h4>Python</h4>
 
 Python es un lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad de código. Es ampliamente utilizado en diversos campos como desarrollo web, análisis de datos, inteligencia artificial y automatización de tareas.
 
@@ -15,7 +15,7 @@ Se implementará Python en el proyecto debido a sus numerosos beneficios, como s
 
 referencia: https://aws.amazon.com/es/what-is/python/
 
-MongoDB
+<h4>MongoDB</h4>
 
 MongoDB es un sistema de base de datos NoSQL, lo que significa que no utiliza el modelo relacional de las bases de datos tradicionales basadas en SQL. En lugar de eso, MongoDB utiliza un modelo de datos flexible basado en documentos JSON (JavaScript Object Notation), lo que lo hace especialmente adecuado para aplicaciones web y móviles modernas.
 En MongoDB, los datos se almacenan en documentos que están organizados en colecciones. Cada documento es una estructura de datos compuesta por pares de clave-valor, similar a los objetos en la programación orientada a objetos. Esto permite almacenar datos de manera flexible y escalable, ya que no se requiere un esquema fijo.
@@ -24,12 +24,12 @@ Se implementará MongoDB en el proyecto por que proporciona beneficios significa
 
 Referencia: https://www.mongodb.com/es/company/what-is-mongodb
 
-Flask
+<h4>Flask</h4>
 
 Flask es un framework web ligero y flexible para Python que proporciona las herramientas necesarias para construir aplicaciones web rápidas y eficientes. Su simplicidad y facilidad de aprendizaje lo hacen ideal para proyectos como un CRUD en Python. En un proyecto CRUD, donde la manipulación de datos es fundamental, Flask ofrece la flexibilidad necesaria para integrar diferentes componentes y bibliotecas según las necesidades específicas del proyecto. Además, su capacidad de extensión permite agregar funcionalidades adicionales fácilmente, lo que lo convierte en una opción versátil para adaptarse a los requisitos cambiantes del proyecto. Con una documentación detallada y fácil de seguir, Flask facilita la construcción de la aplicación CRUD, lo que te permite desarrollar rápidamente una aplicación web eficiente y fácil de mantener.
 Referencia: https://flask.palletsprojects.com/en/3.0.x/
 
-Postman
+<h4>Postman</h4>
 
 Postman es una plataforma de colaboración para el desarrollo de APIs que ofrece herramientas para probar, documentar y compartir APIs de forma eficiente. En un proyecto CRUD en Python, Postman se utilizaría para probar y validar las diferentes operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de la API desarrollada. 
 Gracias a su interfaz intuitiva y fácil de usar, Postman permite enviar solicitudes HTTP a la API y verificar las respuestas recibidas, lo que facilita la depuración y el aseguramiento de la calidad del código. Además, Postman ofrece características como la automatización de pruebas y la generación de documentación, lo que ayuda a mejorar la eficiencia y la colaboración en el desarrollo de la API.
@@ -37,7 +37,7 @@ Gracias a su interfaz intuitiva y fácil de usar, Postman permite enviar solicit
 Referencia: https://www.postman.com/
 
 
-Restful
+<h4>Restful</h4>
 
 RESTful es un estilo arquitectónico para el diseño de servicios web que se basa en los principios de REST (Representational State Transfer). En lugar de utilizar un enfoque basado en sesiones y estado, RESTful se centra en recursos y operaciones sobre estos recursos, lo que lo hace ideal para crear interfaces de API web simples, eficientes y escalables.
 
@@ -51,7 +51,7 @@ Se implementará una arquitectura RESTful en el proyecto porque proporciona bene
 
 referencia: https://www.soybeto.dev/introduccion-a-restful-simplificando-la-comunicacion-entre-aplicaciones/
 
-Api
+<h4>Api</h4>
 
 Qué es una API?
 API significa Interfaz de Programación de Aplicaciones. Es un conjunto de reglas y definiciones que permiten que dos aplicaciones se comuniquen entre sí. Funciona como un intermediario, traduciendo las solicitudes de una aplicación al lenguaje que la otra puede entender.
@@ -67,7 +67,7 @@ Escalabilidad: Las APIs permiten que las aplicaciones se escalen fácilmente. Si
 
 Flexibilidad: Las APIs te dan la flexibilidad de conectar diferentes aplicaciones y servicios. Esto te permite crear soluciones más robustas y personalizadas.
 
-Verbos
+<h4>Verbos</h4>
 
 En programación, los verbos son acciones o métodos que realizan operaciones sobre objetos o datos. Estos verbos representan las acciones que se pueden llevar a cabo en un programa. Por ejemplo, en un proyecto de gestión de usuarios, algunos verbos podrían ser "crearUsuario", "eliminarUsuario", "actualizarUsuario" y "obtenerUsuario".
 
@@ -79,7 +79,7 @@ Reusabilidad: Al encapsular las acciones en verbos, se promueve la reutilizació
 
 Claridad y legibilidad: Al utilizar verbos descriptivos, el código se vuelve más legible y comprensible tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto en el futuro. Esto facilita la colaboración y el mantenimiento del código a largo plazo.
 
-JavaScript
+<h4>JavaScript</h4>
 
 JavaScript es un lenguaje de programación versátil usado principalmente para crear elementos dinámicos e interactivos en páginas web. Se ejecuta directamente en los navegadores, permitiendo la manipulación en tiempo real del contenido que ven los usuarios.
 
@@ -324,6 +324,13 @@ verificamos el editar
 
 verificamos el eliminar
 
+[![]](https://drive.google.com/file/d/1j65AHkKRUi-fm2CViBbsC7AoJ-GKbUgX/view?usp=drive_link)
+verificamos el ver
+
+[![]](https://drive.google.com/file/d/1Ox9w40Y2JCKBOfH1Z9n6nSUcZVjo2jya/view?usp=sharing)
+
+verificamos el editar
+[![]](https://drive.google.com/file/d/1Gm1vPJ1T9zL462g4ddGUagszf6dDuPvt/view?usp=sharing)
 
 Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
 
