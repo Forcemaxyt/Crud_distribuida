@@ -315,7 +315,7 @@ verificamos el editar
 Abstracción y modularidad: Los verbos permiten abstraer las operaciones subyacentes, lo que facilita la modularidad del código. Esto significa que puedes cambiar la implementación interna de un verbo sin afectar el resto del código que lo utiliza, siempre y cuando la interfaz del verbo permanezca igual.
 
 
-¿por que no se puede utilizar potamn para cambiar la base primaria a segundaria? 
+¿por que no se puede utilizar postman para cambiar la base primaria a segundaria? 
 
 Postman en sí mismo no tiene la capacidad de bloquear el acceso a una IP específica en MongoDB Atlas. 
 
